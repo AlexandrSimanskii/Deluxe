@@ -1,0 +1,38 @@
+.aside {
+  position: fixed;
+  top: 0;
+  width: 96px;
+  height: 694px;
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 126px;
+  z-index: 2;
+  &__title {
+    position: absolute;
+    top: 295px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $milk;
+
+    white-space: nowrap;
+    transform: rotate(-90deg);
+  }
+  &__line {
+    position: absolute;
+    top: 425px;
+    width: 1px;
+    height: 76px;
+    background-color: $milk;
+  }
+  &__icons {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+}

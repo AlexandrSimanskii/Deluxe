@@ -1,0 +1,94 @@
+.home {
+  margin-left: 96px;
+  width: 100%;
+  position: relative;
+  padding: 185px 0 249px;
+  background: url(/Deluxe/src/img/images/homebg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $black;
+
+  &__title {
+    text-shadow: 0 0 1px, 0 0 10px;
+    text-transform: uppercase;
+    font-family: "$gar";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 62px;
+    text-align: center;
+    color: #ffffff;
+    &:before {
+      display: block;
+      width: 75px;
+      height: 1px;
+      background-color: $milk;
+    }
+  }
+  &__subtitle {
+    font-family: $rob;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #ffffff;
+    margin: 22px 0 30px;
+  }
+  &-btn {
+    box-shadow: 0 0 5px #fff, 0 0 15px #fff;
+    cursor: pointer;
+    border: 2px solid rgb(206, 193, 193);
+    padding: 23px 50px;
+    background: linear-gradient(transparent, blue);
+    border-radius: 50px;
+    font-family: $rob;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: $black;
+    margin: 50px auto;
+    display: block;
+    &:hover {
+      background-color: $milk;
+    }
+  }
+  &__logo {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -30%);
+  }
+  &__after {
+    position: absolute;
+    right: 0;
+    bottom: -10%;
+
+    font-family: $rob;
+    font-weight: 900;
+    font-size: 90px;
+
+    line-height: 105px;
+    background: linear-gradient(
+      126.33deg,
+      rgba(85, 80, 80, 0.65) -43.79%,
+      rgba(222, 211, 109, 0) 52.43%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    &:hover {
+      cursor: default;
+      background: linear-gradient(
+        126.33deg,
+        rgba(85, 80, 80, 0.75) -43.79%,
+        rgba(222, 211, 109, 0.2) 52.43%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+}

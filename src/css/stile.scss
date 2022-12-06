@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Roboto:wght@400;500&display=swap");
+@font-face {
+  font-family: "Segoe Script";
+  src: url(../fonts/segoescript.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-style: normal;
+  color: white;
+  cursor: default;
+  // text-transform: uppercase;
+}
+
+$black: #191919;
+$milk: #e1dece;
+$rob: "Roboto", sans-serif;
+$GaR: "EB Garamond", serif;
+
+.main {
+  display: flex;
+  background-color: $black;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.fancybox__caption {
+  text-align: center;
+}
+@import "./form";
+@import "./homeDeluxe";
+@import "./headerDeluxe";
+@import "./aside";
+@import "./ourProject";
+@import "./description";

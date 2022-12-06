@@ -1,0 +1,65 @@
+.header {
+  background-color: $black;
+  padding: 13px 0 20px;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    
+    font-family: "$rob";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    background: linear-gradient(106.99deg, #e0dede 24.92%, #a2a0a0 53.57%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  &__list {
+    position: relative;
+    display: flex;
+    column-gap: 27px;
+    &-item {
+      cursor: pointer;
+      position: relative;
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: $milk;
+
+      &::before {
+        content: "";
+        background-color: wheat;
+        width: 0px;
+        height: 2px;
+        position: absolute;
+        bottom: -10px;
+        left: -10px;
+        transition: 1s;
+      }
+      &:hover::before {
+        transition: 2s;
+        width: calc(100% + 20px);
+      }
+    }
+  }
+  &__contact {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+    &-num {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      background: linear-gradient(106.99deg, #e0dede 24.92%, #a2a0a0 53.57%),
+        #dcd7c0;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+}
