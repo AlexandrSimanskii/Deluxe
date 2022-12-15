@@ -1,0 +1,27 @@
+.allMyclass {
+  color: blue;
+  font-size: xx-large;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 10px;
+  word-spacing: 5px;
+  text-decoration: overline red wavy;
+  display: block;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.box {
+  width: 500px;
+  height: 500px;
+  border: 5px black dotted;
+  margin: 50px auto;
+  background-image: url(data:image/jpeg;base64,/9j/4AAQ);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

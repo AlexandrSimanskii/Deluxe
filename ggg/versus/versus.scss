@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-size: cover;
+  background-image: url(/ggg/versus/images/homeBg.png);
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 30px 0;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.header-menu {
+  display: flex;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+}
+
+.header-link {
+  text-decoration: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999999;
+  transition: 5s;
+}
+
+.header-link:hover {
+  color: #00d6b4;
+  transition: 5s;
+}
+
+.home {
+  padding: 0 0 140px;
+  text-align: center;
+}
+
+.home-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 53px;
+  color: #ffffff;
+  margin-bottom: 29px;
+}
+
+.home-btn {
+  padding: 10px 26px;
+  border: 1px solid #00d6b4;
+  border-radius: 3px;
+  background-color: transparent;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00d6b4;
+}
+
+.works-images {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px 22px;
+}
+
+.works {
+  background-color: #222222;
+  padding: 49px 0 101px;
+}
+
+.works-title {
+  padding: 0 30px;
+  text-align: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-bottom: 33px;
+}
+
+work-img {
+  width: calc(33.33333% - 13.333333px);
+}
+.footer {
+  background-color: #222222;
+  padding-bottom: 37px;
+}
+.footer-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #c2c2c2;
+}
+.footer-title2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #999999;
+}

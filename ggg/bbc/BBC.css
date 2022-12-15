@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.background {
+  background-color: black;
+  padding: 10px 0;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.logo {
+  width: 30px;
+}
+.nav-left {
+  display: flex;
+  column-gap: 10px;
+}
+.nav-list {
+  display: flex;
+  column-gap: 20px;
+  list-style-type: none;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.content {
+  display: flex;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+.home-content-card {
+  height: 300px;
+  width: calc(50% - 15px);
+}
+.home-content-card.blue {
+  background: url(https://news.store.rambler.ru/img/181c06132849665a183926325da86ddc?img-format=auto&img-1-resize=height:355,fit:max&img-2-filter=sharpen);
+
+  background-size: cover;
+  display: flex;
+}
+.home-content-card.black {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.home-box {
+  background-color: black;
+  width: calc(50% - 10px);
+  color: aliceblue;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+.img {
+  display: flex;
+  background: url("https://icdn.lenta.ru/images/2022/02/23/22/20220223220110717/owl_article_120_8a64782999b6f5e2aa05ea4e5ddc28ae.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.span-home-content {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 10px;
+}

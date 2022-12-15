@@ -1,0 +1,74 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.header {
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+}
+.box {
+  border-left: 50px solid white;
+  border-right: 50px solid white;
+  border-bottom: 100px solid white;
+  background-color: rgba(4, 243, 167, 0.894);
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 150px;
+  left: 500px;
+
+  transition: 1s;
+}
+
+.box:hover {
+  background-color: rgb(7, 19, 246);
+  transform: rotate(3600deg) scale(2);
+  border-radius: 50%;
+  transition: 8s;
+  height: 400px;
+  width: 200px;
+  font-size: 30px;
+}
+.m {
+  color: transparent;
+  font-size: 25px;
+}
+.m::selection {
+  background-position: center;
+  background-color: aqua;
+  color: black;
+}
+.apple {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  top: 30px;
+  left: 500px;
+}
+.snake {
+  position: relative;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+.snake::before {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 50px;
+}
+.snake2 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: -185px;
+  left: 693px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 40%;
+}

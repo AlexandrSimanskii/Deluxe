@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Form.css" />
+  </head>
+  <body>
+    <fieldset>
+      <legend>Регистрация(название формы)</legend>
+      <form>
+        <label>
+          Имя
+          <input
+            placeholder="Введите Имя"
+            type="text"
+            minlength="5"
+            maxlength="10"
+          />
+        </label>
+        <label>
+          Фамилия
+          <input
+            value="Симанский"
+            placeholder="Введите фамилию"
+            type="text"
+            required
+          />
+        </label>
+        <label>
+          Фамилия
+          <input value="Только чтение" type="text" required readonly />
+        </label>
+        <label>
+          Возраст
+          <input placeholder="Age" min="16" max="65" type="number" />
+        </label>
+        <span>Введите пол</span>
+        <label>
+          Мужской
+          <input checked name="gender" type="radio" name="" id="" />
+        </label>
+        <label>
+          Женский
+          <input name="gender" type="radio" name="" id="" />
+        </label>
+        <hr />
+        <label>
+          Введите пароль
+          <input type="password" />
+        </label>
+        <label>
+          Запомните пароль
+          <input checked disabled type="checkbox" />
+        </label>
+        <label>
+          Выберите национальность
+          <select>
+            <option selected value="">
+              Выбери нац-ть Селектед-по умолчанию
+            </option>
+            <option value="">Ru</option>
+            <option value="">Kz</option>
+            <option value="">Kg</option>
+            <option value="">Lt</option>
+            <option value="">Pl</option>
+            <option value="">Usa</option>
+          </select>
+        </label>
+        <button type="submit">отправить</button>
+        <button type="reset">сбросить</button>
+        <label>
+          <textarea placeholder="Введите сообщение" name="" id=""></textarea>
+        </label>
+      </form>
+    </fieldset>
+  </body>
+</html>

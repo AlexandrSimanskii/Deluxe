@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(195, 250, 12);
+}
+
+.container {
+  position: relative;
+  width: 1100px;
+  margin: 0 auto;
+  height: 800px;
+}
+.flex {
+  position: relative;
+}
+.circle {
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translate(-50%);
+  border: 1px solid black;
+
+  background-size: 100%;
+  background-image: url(./src/msg885294721-1037.jpg);
+  border-radius: 50%;
+  transition: 10s;
+  animation-name: img;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.text {
+  position: absolute;
+  z-index: 10;
+  animation: text 10s infinite;
+  text-transform: uppercase;
+}
+@keyframes text {
+  from {
+    margin-left: -100px;
+    color: blueviolet;
+  }
+  16% {
+    color: red;
+  }
+  25% {
+    margin-left: 80%;
+    margin-top: 0;
+
+    color: rgb(103, 196, 254);
+  }
+  50% {
+    margin-left: 80%;
+    margin-top: 500px;
+    color: blue;
+  }
+  67% {
+    color: green;
+  }
+  75% {
+    margin-top: 500px;
+    margin-left: -100px;
+    color: rgb(210, 178, 18);
+  }
+  to {
+    margin-left: -100px;
+    color: blueviolet;
+  }
+}
+
+@keyframes img {
+  from {
+    width: 30px;
+    height: 30px;
+  }
+  to {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 5px rgb(216, 4, 249), 0 0 15px rgb(216, 4, 249),
+      0 0 25px rgb(216, 4, 249), 0 0 35px rgb(216, 4, 249),
+      0 0 45px rgb(216, 4, 249), 0 0 55px rgb(216, 4, 249),
+      0 0 65px rgb(216, 4, 249), 0 0 78px rgb(216, 4, 249);
+  }
+}
